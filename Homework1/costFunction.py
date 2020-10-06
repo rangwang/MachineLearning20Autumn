@@ -1,4 +1,5 @@
 import numpy as np
+import math as m1
 
 def costFunction(x_data, y_data, theta):
     m = np.size(x_data, 0)

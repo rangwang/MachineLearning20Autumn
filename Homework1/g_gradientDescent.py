@@ -8,7 +8,7 @@ def g_gradientDescent(x_data, y_data, alpha, theta, delta, p_lambda):
     while True:
         thetat = theta - alpha * grad #进行梯度下降
         J, grad = cf.g_costFunction(x_data, y_data, thetat, p_lambda)
-        if np.abs(J_0 - J) < delta:
+        if np.abs(J_0-J) < delta:
             print("带超参数的梯度下降次数为：%d"%(i))
             break
         else:
